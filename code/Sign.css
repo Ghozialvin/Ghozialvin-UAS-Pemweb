@@ -1,0 +1,237 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100%;
+    background-image: url(Image1.png);
+    background-size: cover;
+}
+
+/* Content */
+.background {
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    position:relative;
+}
+
+.container {
+    background-color: #1B1833;
+    padding: 50px;
+    border-radius: 15px;
+    width: 100%;
+    height: fit-content;
+    max-width: 500px;
+    /* max-height: 810px; */
+    margin: 20px;
+    opacity: 0.5;
+    animation: fadeInText 2s ease forwards;
+}
+
+/* Text Styles */
+h2{
+    text-align: center;
+    font-size: 2.4rem;
+    font-family: "DynaPuff", "system-ui";
+    font-weight: bold;
+    padding-bottom: 20px;
+    font-style: italic;
+    animation: fadeInText 2s ease forwards;
+    color: #ffffff;
+}
+p{
+    text-align: center;
+    font-size: 1.8em;
+    color: #ffffff;
+    margin: 20px 10px 10px 40px;
+    animation: fadeInText 2s ease forwards;
+}
+.rule {
+    color: #074799;
+    font-size: 1.3em;
+    animation: fadeInText 2s ease forwards;
+    margin: 20px 10px 10px 5px;
+
+} 
+a{
+    color: #45a049;
+    font-weight: bold;
+    font-size: 1.3em;
+    margin: 160px;
+    animation: fadeInText 2s ease forwards;
+}
+a:hover{
+    color: #ffffff;
+}
+
+/* Form Input & Label */
+.form-group {
+    margin-bottom: 10px;
+}
+
+.form-group label {
+    font-size: 1.6em;
+    font-family: "DynaPuff", "system-ui";
+    margin: 10px 0;
+    display: block;
+    color: #ffffff;
+    animation: fadeInText 2s ease forwards;
+}
+.form-checkbox {
+    display: relative;
+}
+
+.form-checkbox label {
+    margin-right: 10px;
+    /* display: inline-block; */
+    color: #ffffff;
+    margin: 10px 0px 20px 10px;
+    font-size: 1.2em;
+    animation: fadeInText 2s ease forwards;
+}
+input {
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 50px;
+    font-size: 1rem;    
+}
+.form-group input, .form-group select {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+}
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+/* Animasi untuk Judul */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInText {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+h2 {
+    animation: fadeInText 2s ease forwards;
+}
+
+/* Animasi untuk Tombol */
+@keyframes buttonHover {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+button:hover {
+    animation: buttonHover 0.5s ease-in-out;
+}
+
+/* Animasi untuk Input Focus */
+@keyframes inputFocus {
+    0% {
+        box-shadow: 0 0 0px rgba(0, 0, 0, 0);
+    }
+    100% {
+        box-shadow: 0 0 10px rgba(0, 255, 127, 0.5);
+    }
+}
+
+input:focus {
+    animation: inputFocus 1s ease forwards;
+    border: 1px solid #4CAF50;
+}
+
+/* Responsive Design for Small Screens */
+@media (max-width: 768px) {
+    .container {
+        padding: 20px;
+        margin: 10px;
+    }
+
+    h2 {
+        font-size: 2rem;
+        padding-bottom: 15px;
+    }
+
+    p {
+        font-size: 1.2em;
+        margin: 10px;
+    }
+
+    .form-group label {
+        font-size: 1.2em;
+    }
+
+    input, button {
+        font-size: 0.9rem;
+        padding: 8px;
+    }
+
+    .form-checkbox label {
+        font-size: 1em;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 15px;
+        margin: 5px;
+    }
+
+    h2 {
+        font-size: 1.8rem;
+    }
+
+    p {
+        font-size: 1em;
+    }
+
+    .form-group label {
+        font-size: 1em;
+    }
+
+    input, button {
+        font-size: 0.8rem;
+        padding: 6px;
+    }
+
+    .form-checkbox label {
+        font-size: 0.9em;
+    }
+}
