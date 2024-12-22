@@ -26,5 +26,5 @@ Page ini merupakan tampilan untuk user yang sudah terdaftar dan sudah punya akun
 3. Halaman Display Data 
 Page ini merupakan tampilan untuk data siapa saja user atau member yang terdaftar. 
 
-![Display Page](Displaypage.png)
+![Display Page](Display,jpg)
 
