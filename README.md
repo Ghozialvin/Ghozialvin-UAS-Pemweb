@@ -28,3 +28,15 @@ Page ini merupakan tampilan untuk data siapa saja user atau member yang terdafta
 
 ![Display Page](Displaypage.png)
 
+
+### Database Explanation
+
+Gambar ini merupakan tampilan databse sql pada table member
+
+![Database ](Database.png)
+
+
+### Hosting Step
+
+* Open https://www.infinityfree.com
+* Link Website [UASPEMWEB](http://uaspemwebalvin.ct.ws/Login.php) 
